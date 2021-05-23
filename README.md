@@ -9,7 +9,7 @@ This is a base template that you can use to create Domo custom apps with React.
 1. Clone this repo
 2. From the root of the directory , `npm install`
 3. Once all packages are installed, `npm run build`
-4. Once it is built, `npm start` to test if everything builds properly
+4. Once it is built, `cd build` then `domo dev` to test if everything built properly
 5. The app should now be running properly
 
 ## How to deploy
