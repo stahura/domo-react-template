@@ -12,6 +12,16 @@ This is a base template that you can use to create Domo custom apps with React.
 4. Once it is built, `npm start` to test if everything builds properly
 5. The app should now be running properly
 
+## How to deploy
+
+1. From the root of the directly, `npm run build`
+2. `cd build`
+3. `domo publish`
+4. If it is your first time using `domo publish` on this app, your app will not have a design ID. 
+    When you publish, your `build/manifest.json` will have a design ID. Copy that id to `public/manifest.json`. This ensures
+    that when you publish down the road, it won't create copies of your app but will instead update the same app each time.
+5. In your domo instance go to `Asset Library`. Select your app, you can then create a card with your app
+
 ## Requirements
 
 Domo app developer documentation can be found [HERE](https://developer.domo.com/docs/dev-studio/dev-studio-overview)
