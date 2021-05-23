@@ -1,0 +1,12 @@
+{
+  "name": "Domo React Template",
+  "version": "0.0.1",
+  "fullpage": true,
+  "size": {
+    "width": 5,
+    "height": 3
+  },
+  "mapping": [
+  
+  ]
+}
