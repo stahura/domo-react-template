@@ -1,8 +1,10 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 const defaultTheme = createMuiTheme({});
-//"#FF0000"
 
+//This color palette changes Material UI Buttons to use the same Blue used by Domo
+//The override on MuiButton changes the fontsize and font color 
 export default createMuiTheme({
+
   palette: {
     primary: {
       main: "#FFFFFF",
@@ -20,39 +22,7 @@ export default createMuiTheme({
       }
     },
 
-    MuiInputLabel: {
-      root: {
-
-        '&$focused': {
-          color: "black"
-        }
-      }
-    },
-    MuiOutlinedInput: {
-      root: {
-        '& $notchedOutline': {
-          borderColor: "#9ccaeb"
-        },
-        '&$focused $notchedOutline': {
-          borderColor: "#9ccaeb",
-
-        },
-      },
-
-
-    }
   }
 
 });
 
-
- // notchedOutline : {
-   // borderColor: "#9ccaeb",
- // },
-
-/*
-       '&:hover:not($disabled):not($focused):not($error) $notchedOutline': {
-         border: '2px solid #5c6bc0',
-
-       }
-*/
